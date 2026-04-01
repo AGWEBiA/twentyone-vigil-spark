@@ -1,95 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Burgundy-based dark theme */
+    --background: 330 40% 97%;
+    --foreground: 330 10% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 330 10% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 330 10% 10%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 330 40% 24%;
+    --primary-foreground: 40 100% 88%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 330 12% 70%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 330 10% 94%;
+    --muted-foreground: 330 5% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 150 65% 81%;
+    --accent-foreground: 0 0% 0%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 330 15% 88%;
+    --input: 330 15% 88%;
+    --ring: 330 40% 24%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    /* Custom tokens */
+    --burgundy: 330 40% 24%;
+    --burgundy-dark: 330 44% 15%;
+    --cream-gold: 40 100% 88%;
+    --cta-green: 150 65% 81%;
+    --action-blue: 220 80% 46%;
+    --dusty-rose: 330 12% 70%;
+    --dark-navy: 197 100% 12%;
+    --alert-red: 0 100% 65%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-heading: 'Poppins', sans-serif;
+    --font-sub: 'Roboto', sans-serif;
+    --font-body: 'Lato', sans-serif;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
@@ -101,5 +70,42 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2 {
+    font-family: var(--font-display);
+  }
+
+  h3 {
+    font-family: var(--font-heading);
+  }
+
+  h4, h5 {
+    font-family: var(--font-sub);
+  }
+}
+
+@layer components {
+  .section-burgundy {
+    @apply bg-burgundy text-cream-gold;
+  }
+
+  .section-burgundy-dark {
+    @apply bg-burgundy-dark text-cream-gold;
+  }
+
+  .btn-cta {
+    @apply inline-flex items-center justify-center rounded-full font-bold text-base transition-all duration-250 px-8 py-4 bg-cta-green text-accent-foreground border-2 border-foreground hover:-translate-y-0.5 hover:shadow-lg;
+    font-family: var(--font-body);
+  }
+
+  .btn-burgundy {
+    @apply inline-flex items-center justify-center rounded-full font-bold text-base transition-all duration-250 px-8 py-4 bg-burgundy-dark text-cream-gold hover:-translate-y-0.5 hover:shadow-lg;
+    font-family: var(--font-body);
+  }
+
+  .content-box {
+    @apply bg-burgundy p-8 md:p-10 rounded-2xl shadow-xl;
   }
 }
