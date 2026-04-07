@@ -1,5 +1,4 @@
 import { BookOpen, CheckSquare, FileText, Target } from "lucide-react";
-import productImg from "@/assets/product-mockup.jpg";
 import offerBg from "@/assets/offer-bg.jpg";
 
 const OfferSection = () => {
@@ -49,17 +48,7 @@ const OfferSection = () => {
           O que você recebe ao entrar no 21 Dias de Vigilância
         </h2>
 
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
-          <img
-            src={productImg}
-            alt="Material do 21 Dias de Vigilância"
-            className="w-full lg:w-1/2 rounded-2xl shadow-2xl"
-            loading="lazy"
-            width={1200}
-            height={800}
-          />
-
-          <div className="space-y-6 flex-1">
+        <div className="space-y-6 max-w-2xl mx-auto">
             {items.map((item, i) => (
               <div key={i} className="bg-burgundy/50 rounded-xl p-6">
                 {item.bonus && (
@@ -78,7 +67,6 @@ const OfferSection = () => {
                 </p>
               </div>
             ))}
-          </div>
         </div>
 
         <div className="mt-14 text-center">
