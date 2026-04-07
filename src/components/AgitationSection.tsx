@@ -14,10 +14,10 @@ const AgitationSection = () => {
           Se você continuar tratando essa luta só como "vou resistir mais forte", o roteiro costuma ser o mesmo:
         </h2>
 
-        <div className="space-y-5 mt-10">
+        <div className="mt-10 mx-auto max-w-xl rounded-xl border border-white/10 bg-white/5 px-6 py-6 space-y-4">
           {consequences.map((item, i) => (
-            <div key={i} className="flex gap-4 items-start">
-              <span className="text-alert-red font-bold text-lg mt-0.5">✕</span>
+            <div key={i} className="flex gap-3 items-start">
+              <span className="text-alert-red font-bold text-lg mt-0.5 flex-shrink-0">✕</span>
               <p className="font-body text-secondary-foreground text-base leading-relaxed">{item}</p>
             </div>
           ))}
