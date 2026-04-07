@@ -1,5 +1,5 @@
 import { BookOpen, CheckSquare, FileText, Target } from "lucide-react";
-import productImg from "@/assets/product-mockup.jpg";
+import productImg from "@/assets/product-mockup.png";
 
 const OfferSection = () => {
   const items = [
