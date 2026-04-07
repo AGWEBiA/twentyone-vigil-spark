@@ -1,4 +1,5 @@
 import authorImg from "@/assets/author.jpg";
+import authorMobileImg from "@/assets/author-mobile.jpg";
 
 const AuthorStorySection = () => {
   return (
@@ -6,9 +7,17 @@ const AuthorStorySection = () => {
       <div className="container mx-auto px-6 max-w-3xl">
         <div className="flex flex-col md:flex-row gap-10 items-start">
           <img
+            src={authorMobileImg}
+            alt="Giovanni Sophia"
+            className="block md:hidden w-64 rounded-2xl object-contain shadow-lg flex-shrink-0 mx-auto"
+            loading="lazy"
+            width={800}
+            height={800}
+          />
+          <img
             src={authorImg}
             alt="Giovanni Sophia"
-            className="w-64 md:w-72 rounded-2xl object-contain shadow-lg flex-shrink-0 mx-auto md:mx-0"
+            className="hidden md:block md:w-72 rounded-2xl object-contain shadow-lg flex-shrink-0"
             loading="lazy"
             width={800}
             height={800}
