@@ -8,7 +8,7 @@ const AuthorStorySection = () => {
           <img
             src={authorImg}
             alt="Giovanni Sophia"
-            className="w-48 h-48 rounded-2xl object-cover shadow-lg flex-shrink-0 mx-auto md:mx-0"
+            className="w-64 h-64 md:w-72 md:h-72 rounded-2xl object-cover shadow-lg flex-shrink-0 mx-auto md:mx-0"
             loading="lazy"
             width={800}
             height={800}
