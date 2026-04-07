@@ -47,7 +47,7 @@ const OfferSection = () => {
           <img
             src={productImg}
             alt="Material do 21 Dias de Vigilância"
-            className="w-full lg:w-1/2 rounded-2xl shadow-2xl"
+            className="w-full lg:w-1/2 rounded-2xl"
             loading="lazy"
             width={1200}
             height={800}
