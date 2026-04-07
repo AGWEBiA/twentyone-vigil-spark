@@ -1,5 +1,6 @@
 import { BookOpen, CheckSquare, FileText, Target } from "lucide-react";
 import productImg from "@/assets/product-mockup.jpg";
+import offerBg from "@/assets/offer-bg.jpg";
 
 const OfferSection = () => {
   const items = [
@@ -37,8 +38,13 @@ const OfferSection = () => {
   ];
 
   return (
-    <section id="oferta" className="py-20 md:py-28 section-burgundy-dark">
-      <div className="container mx-auto px-6 max-w-4xl">
+    <section id="oferta" className="relative py-20 md:py-28 section-burgundy-dark overflow-hidden">
+      <div
+        className="absolute inset-x-0 top-0 h-[500px] bg-cover bg-top bg-no-repeat pointer-events-none"
+        style={{ backgroundImage: `url(${offerBg})` }}
+      />
+      <div className="absolute inset-x-0 top-0 h-[500px] bg-gradient-to-b from-transparent via-burgundy-dark/70 to-burgundy-dark pointer-events-none" />
+      <div className="relative z-10 container mx-auto px-6 max-w-4xl">
         <h2 className="font-display text-cream-gold text-2xl md:text-4xl text-center mb-12 leading-snug">
           O que você recebe ao entrar no 21 Dias de Vigilância
         </h2>
