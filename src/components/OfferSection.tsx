@@ -1,7 +1,10 @@
 import { BookOpen, CheckSquare, FileText, Target } from "lucide-react";
+import { useEffect, useRef } from "react";
 import productImg from "@/assets/product-mockup.png";
 
 const OfferSection = () => {
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+
   const items = [
     {
       icon: BookOpen,
@@ -36,6 +39,26 @@ const OfferSection = () => {
     },
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("translate-y-0", "opacity-100", "scale-100");
+            entry.target.classList.remove("translate-y-12", "opacity-0", "scale-95");
+          }
+        });
+      },
+      { threshold: 0.2, rootMargin: "0px 0px -50px 0px" }
+    );
+
+    cardsRef.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="oferta" className="py-20 md:py-28 section-burgundy-dark">
       <div className="container mx-auto px-6 max-w-4xl">
@@ -53,25 +76,37 @@ const OfferSection = () => {
             height={800}
           />
 
-          <div className="space-y-6 flex-1">
-            {items.map((item, i) => (
-              <div key={i} className="bg-burgundy/50 rounded-xl p-6">
-                {item.bonus && (
-                  <span className="inline-block bg-cta-green text-accent-foreground text-xs font-bold px-3 py-1 rounded-full mb-3">
-                    Bônus {item.bonus}
-                  </span>
-                )}
-                <h4 className="font-heading text-cream-gold text-lg font-bold mb-2">
-                  {item.emoji} {item.title}
-                </h4>
-                <p className="font-body text-secondary-foreground text-sm leading-relaxed mb-2">
-                  {item.desc}
-                </p>
-                <p className="font-body text-dusty-rose text-sm">
-                  Valor: {item.value}
-                </p>
-              </div>
-            ))}
+          <div className="flex-1 relative">
+            <div className="space-y-[-1rem]">
+              {items.map((item, i) => (
+                <div
+                  key={i}
+                  ref={(el) => { cardsRef.current[i] = el; }}
+                  className="bg-burgundy/80 backdrop-blur-sm rounded-xl p-6 border border-cream-gold/10 shadow-lg
+                    translate-y-12 opacity-0 scale-95 transition-all duration-700 ease-out
+                    relative hover:z-50 hover:scale-[1.02] hover:shadow-2xl"
+                  style={{
+                    zIndex: i + 1,
+                    transitionDelay: `${i * 150}ms`,
+                  }}
+                >
+                  {item.bonus && (
+                    <span className="inline-block bg-cta-green text-accent-foreground text-xs font-bold px-3 py-1 rounded-full mb-3">
+                      Bônus {item.bonus}
+                    </span>
+                  )}
+                  <h4 className="font-heading text-cream-gold text-lg font-bold mb-2">
+                    {item.emoji} {item.title}
+                  </h4>
+                  <p className="font-body text-secondary-foreground text-sm leading-relaxed mb-2">
+                    {item.desc}
+                  </p>
+                  <p className="font-body text-dusty-rose text-sm">
+                    Valor: {item.value}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
