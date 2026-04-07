@@ -44,7 +44,7 @@ const OfferSection = () => {
         style={{ backgroundImage: `url(${offerBg})` }}
       />
       <div className="absolute inset-x-0 top-0 h-[500px] bg-gradient-to-b from-transparent via-burgundy-dark/70 to-burgundy-dark pointer-events-none" />
-      <div className="container mx-auto px-6 max-w-4xl">
+      <div className="relative z-10 container mx-auto px-6 max-w-4xl">
         <h2 className="font-display text-cream-gold text-2xl md:text-4xl text-center mb-12 leading-snug">
           O que você recebe ao entrar no 21 Dias de Vigilância
         </h2>
