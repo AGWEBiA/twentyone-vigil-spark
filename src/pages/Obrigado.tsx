@@ -107,7 +107,7 @@ const Obrigado = () => {
             </a>
           </div>
 
-          <div className="flex items-center justify-center gap-2 text-dusty-rose">
+          <div className="flex items-start justify-center gap-2 text-dusty-rose">
             <Clock className="w-4 h-4 shrink-0" />
             <p className="font-body text-sm">
               Horário de atendimento: Segunda à&nbsp;Sexta, das&nbsp;9h às&nbsp;17h
