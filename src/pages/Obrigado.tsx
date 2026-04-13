@@ -36,11 +36,11 @@ const Obrigado = () => {
 
             <Button
               asChild
-              className="bg-cta-green hover:bg-cta-green/90 text-accent-foreground font-body font-bold text-base md:text-lg px-8 py-6 rounded-xl"
+              className="bg-cta-green hover:bg-cta-green/90 text-accent-foreground font-body font-bold text-base md:text-lg px-6 md:px-8 py-6 rounded-xl whitespace-normal text-center max-w-full"
             >
               <a href="mailto:" target="_blank" rel="noopener noreferrer">
-                Quero acessar meu eBook agora
-                <ChevronRight className="ml-2 w-5 h-5" />
+                Quero acessar meu&nbsp;eBook agora
+                <ChevronRight className="ml-2 w-5 h-5 shrink-0" />
               </a>
             </Button>
           </div>
