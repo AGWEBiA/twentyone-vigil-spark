@@ -76,6 +76,7 @@ const OfferSection = () => {
         </div>
 
         <div className="mt-14 text-center">
+          <div id="pricing" className="scroll-mt-20" />
           <p className="font-body text-dusty-rose text-base mb-2 line-through">
             Valor total do que você está recebendo: R$ 188
           </p>
@@ -85,7 +86,7 @@ const OfferSection = () => {
           <p className="font-body text-secondary-foreground text-sm mb-8">
             Você recebe tudo por download, pode ler no celular e, se preferir, pode imprimir.
           </p>
-          <a href="#" className="btn-cta text-lg">
+          <a href="https://pay.kiwify.com.br/KLboF4J" className="btn-cta text-lg" target="_blank" rel="noopener noreferrer">
             QUERO COMEÇAR MEUS 21 DIAS AGORA — R$ 47
           </a>
           <p className="text-dusty-rose text-sm mt-4">

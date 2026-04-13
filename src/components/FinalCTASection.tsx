@@ -26,7 +26,7 @@ const FinalCTASection = () => {
         </div>
 
         <div>
-          <a href="#" className="btn-cta text-lg">
+          <a href="#pricing" className="btn-cta text-lg">
             QUERO COMEÇAR MEUS 21 DIAS AGORA — R$ 47
           </a>
           <p className="text-muted-foreground text-sm mt-4">
