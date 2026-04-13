@@ -7,9 +7,6 @@ const Obrigado = () => {
       {/* Hero - Acima da dobra */}
       <section className="bg-burgundy-dark py-16 md:py-24">
         <div className="container mx-auto px-6 max-w-3xl text-center">
-          <div className="inline-block bg-cta-green/20 text-cta-green px-4 py-2 rounded-full text-sm font-body mb-8">
-            ✅ Compra&nbsp;confirmada
-          </div>
 
           <h1 className="font-display text-cream-gold text-3xl md:text-5xl leading-tight mb-4">
             Compra&nbsp;confirmada.
