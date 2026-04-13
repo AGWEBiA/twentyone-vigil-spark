@@ -38,7 +38,7 @@ const FinalCTASection = () => {
           <img
             src={authorImg}
             alt="Giovanni Sophia"
-            className="w-20 h-20 rounded-full object-cover"
+            className="w-20 h-20 rounded-full object-cover object-top"
             loading="lazy"
             width={800}
             height={800}
