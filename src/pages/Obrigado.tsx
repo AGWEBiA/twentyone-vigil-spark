@@ -8,29 +8,29 @@ const Obrigado = () => {
       <section className="bg-burgundy-dark py-16 md:py-24">
         <div className="container mx-auto px-6 max-w-3xl text-center">
           <div className="inline-block bg-cta-green/20 text-cta-green px-4 py-2 rounded-full text-sm font-body mb-8">
-            ✅ Compra confirmada
+            ✅ Compra&nbsp;confirmada
           </div>
 
           <h1 className="font-display text-cream-gold text-3xl md:text-5xl leading-tight mb-4">
-            Compra confirmada.
+            Compra&nbsp;confirmada.
           </h1>
           <h2 className="font-display text-cream-gold text-2xl md:text-4xl leading-tight mb-8">
-            Agora começa a sua parte.
+            Agora começa a&nbsp;sua&nbsp;parte.
           </h2>
 
           <p className="font-body text-dusty-rose text-base md:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-            Você acabou de dar um passo que muita gente adia por anos. E eu sei o peso disso, porque eu fumei por 24 anos.
+            Você acabou de dar um passo que muita gente adia por&nbsp;anos. E&nbsp;eu sei o peso disso, porque eu fumei por&nbsp;24&nbsp;anos.
           </p>
 
           <div className="bg-burgundy/40 border border-cream-gold/20 rounded-2xl p-6 md:p-8 mb-8">
             <p className="font-body text-cream-gold font-bold text-lg mb-2">
-              Próximo passo (agora):
+              Próximo passo&nbsp;(agora):
             </p>
             <p className="font-body text-dusty-rose text-base mb-6">
-              Abra seu e-mail e pegue o acesso. O assunto costuma vir como:
+              Abra seu e-mail e pegue o&nbsp;acesso. O&nbsp;assunto costuma vir&nbsp;como:
               <br />
               <span className="text-cream-gold italic">
-                "[Seus 21 Dias de Vigilância te aguardam AQUI]"
+                "[Seus 21 Dias de Vigilância te&nbsp;aguardam&nbsp;AQUI]"
               </span>
             </p>
 
@@ -39,7 +39,7 @@ const Obrigado = () => {
               className="bg-cta-green hover:bg-cta-green/90 text-accent-foreground font-body font-bold text-base md:text-lg px-6 md:px-8 py-6 rounded-xl whitespace-normal text-center max-w-full"
             >
               <a href="mailto:" target="_blank" rel="noopener noreferrer">
-                Quero acessar meu&nbsp;eBook agora
+                Quero acessar meu&nbsp;eBook&nbsp;agora
                 <ChevronRight className="ml-2 w-5 h-5 shrink-0" />
               </a>
             </Button>
@@ -47,7 +47,7 @@ const Obrigado = () => {
 
           <div className="bg-burgundy/30 border border-dusty-rose/20 rounded-xl p-4 max-w-xl mx-auto">
             <p className="font-body text-dusty-rose text-sm">
-              ⚠️ Se não achar em 5 minutos, olhe <strong className="text-cream-gold">Spam</strong>, <strong className="text-cream-gold">Promoções</strong> ou <strong className="text-cream-gold">Lixeira</strong> e pesquise pelo remetente.
+              ⚠️ Se não achar em 5&nbsp;minutos, olhe <strong className="text-cream-gold">Spam</strong>, <strong className="text-cream-gold">Promoções</strong> ou&nbsp;<strong className="text-cream-gold">Lixeira</strong> e pesquise pelo&nbsp;remetente.
             </p>
           </div>
         </div>
@@ -57,25 +57,25 @@ const Obrigado = () => {
       <section className="py-16 md:py-20 bg-muted">
         <div className="container mx-auto px-6 max-w-2xl text-center">
           <h2 className="font-display text-primary text-2xl md:text-4xl leading-tight mb-8">
-            Faça um acordo comigo por 21 dias
+            Faça um acordo comigo por&nbsp;21&nbsp;dias
           </h2>
 
           <p className="font-body text-muted-foreground text-base md:text-lg leading-relaxed mb-8">
-            Não é um voto para nunca mais errar. É um compromisso de caminho.
+            Não é um voto para nunca mais&nbsp;errar. É&nbsp;um compromisso de&nbsp;caminho.
           </p>
 
           <div className="bg-card border border-border rounded-2xl p-6 md:p-8 mb-8 shadow-sm">
             <p className="font-body text-primary font-bold text-lg mb-4">
-              Seu único trabalho é:
+              Seu único trabalho&nbsp;é:
             </p>
             <p className="font-body text-foreground text-base md:text-lg leading-relaxed">
-              Não se enganar sobre o que está sentindo e voltar para o plano quando cair.
+              Não se enganar sobre o que está sentindo e voltar para o plano quando&nbsp;cair.
             </p>
           </div>
 
           <div className="bg-card border border-border rounded-xl p-5 max-w-lg mx-auto shadow-sm">
             <p className="font-body text-muted-foreground text-base italic leading-relaxed">
-              Se você caiu ontem, você não "perdeu". Você só tem <strong className="text-primary">informação nova</strong> sobre o seu gatilho.
+              Se você caiu ontem, você não&nbsp;"perdeu". Você só tem <strong className="text-primary">informação&nbsp;nova</strong> sobre o&nbsp;seu&nbsp;gatilho.
             </p>
           </div>
         </div>
@@ -85,7 +85,7 @@ const Obrigado = () => {
       <section className="py-16 md:py-20 bg-burgundy-dark">
         <div className="container mx-auto px-6 max-w-2xl text-center">
           <h2 className="font-display text-cream-gold text-2xl md:text-3xl leading-tight mb-10">
-            Precisa falar com alguém da equipe?
+            Precisa falar com alguém da&nbsp;equipe?
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -94,8 +94,8 @@ const Obrigado = () => {
               className="bg-burgundy/40 border border-cream-gold/20 rounded-xl p-6 flex flex-col items-center gap-3 hover:border-cream-gold/40 transition-colors"
             >
               <Mail className="w-8 h-8 text-cream-gold" />
-              <p className="font-body text-cream-gold font-bold text-sm">Suporte por e-mail</p>
-              <p className="font-body text-dusty-rose text-sm">atendimento@agwebi.com.br</p>
+              <p className="font-body text-cream-gold font-bold text-sm">Suporte por&nbsp;e-mail</p>
+              <p className="font-body text-dusty-rose text-sm break-all">atendimento@agwebi.com.br</p>
             </a>
 
             <a
@@ -106,14 +106,14 @@ const Obrigado = () => {
             >
               <MessageCircle className="w-8 h-8 text-cta-green" />
               <p className="font-body text-cream-gold font-bold text-sm">WhatsApp</p>
-              <p className="font-body text-dusty-rose text-sm">(48) 99667 0822</p>
+              <p className="font-body text-dusty-rose text-sm">(48)&nbsp;99667&nbsp;0822</p>
             </a>
           </div>
 
           <div className="flex items-center justify-center gap-2 text-dusty-rose">
-            <Clock className="w-4 h-4" />
+            <Clock className="w-4 h-4 shrink-0" />
             <p className="font-body text-sm">
-              Horário de atendimento: Segunda à Sexta, das 9h às 17h
+              Horário de atendimento: Segunda à&nbsp;Sexta, das&nbsp;9h às&nbsp;17h
             </p>
           </div>
         </div>
@@ -123,7 +123,7 @@ const Obrigado = () => {
       <footer className="py-8 bg-burgundy-dark border-t border-cream-gold/10">
         <div className="container mx-auto px-6 text-center">
           <p className="font-body text-dusty-rose text-sm">
-            © 2026 21 Dias de Vigilância. Todos os direitos reservados.
+            © 2026 21 Dias de&nbsp;Vigilância. Todos os direitos&nbsp;reservados.
           </p>
         </div>
       </footer>
