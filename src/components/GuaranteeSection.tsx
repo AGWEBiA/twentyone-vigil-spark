@@ -1,12 +1,10 @@
-import { Shield } from "lucide-react";
+import seloGarantia from "@/assets/selo-de-garantia.png";
 
 const GuaranteeSection = () => {
   return (
     <section className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-6 max-w-3xl text-center">
-        <div className="w-20 h-20 rounded-full bg-cta-green/20 flex items-center justify-center mx-auto mb-8">
-          <Shield className="w-10 h-10 text-cta-green" />
-        </div>
+        <img src={seloGarantia} alt="Selo de Garantia 30 Dias Incondicional" className="w-40 h-40 object-contain mx-auto mb-8" />
 
         <h2 className="font-display text-foreground text-2xl md:text-4xl mb-6 leading-snug">
           Você testa. O risco é meu.
