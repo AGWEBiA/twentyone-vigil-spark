@@ -4,7 +4,7 @@ const GuaranteeSection = () => {
   return (
     <section className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-6 max-w-3xl text-center">
-        <img src={seloGarantia} alt="Selo de Garantia 30 Dias Incondicional" className="w-40 h-40 object-contain mx-auto mb-8" />
+        <img src={seloGarantia} alt="Selo de Garantia 7 Dias Incondicional" className="w-40 h-40 object-contain mx-auto mb-8" />
 
         <h2 className="font-display text-foreground text-2xl md:text-4xl mb-6 leading-snug">
           Você testa. O risco é meu.
@@ -15,7 +15,7 @@ const GuaranteeSection = () => {
             Eu acredito nesse método porque ele nasceu de 24 anos de tentativas fracassadas e de uma virada real.
           </p>
           <p>
-            Por isso: você tem 30 dias para acessar o material, começar a jornada e ver se esse caminho faz sentido para a sua vida.
+            Por isso: você tem 7 dias para acessar o material, começar a jornada e ver se esse caminho faz sentido para a sua vida.
           </p>
           <p>
             Se dentro desse prazo você não enxergar nenhum avanço na sua relação com esse vício — nenhuma clareza, nenhum novo recurso, nenhuma mudança — você pede o reembolso. Sem questionamento. Sem burocracia.
