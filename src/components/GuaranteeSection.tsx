@@ -4,7 +4,7 @@ const GuaranteeSection = () => {
   return (
     <section className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-6 max-w-3xl text-center">
-        <img src={seloGarantia} alt="Selo de Garantia 7 Dias Incondicional" className="w-40 h-40 object-contain mx-auto mb-8" />
+        <img src={seloGarantia} alt="Selo de Garantia 7 Dias Incondicional" className="w-52 h-52 md:w-56 md:h-56 object-contain mx-auto mb-8" />
 
         <h2 className="font-display text-foreground text-2xl md:text-4xl mb-6 leading-snug">
           Você testa. O risco é meu.
