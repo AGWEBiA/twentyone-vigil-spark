@@ -30,7 +30,7 @@ const FinalCTASection = () => {
             QUERO COMEÇAR MEUS 21 DIAS AGORA — R$ 47
           </a>
           <p className="text-muted-foreground text-sm mt-4">
-            Acesso imediato • Garantia de 30 dias • Comece hoje
+            Acesso imediato • Garantia de 7 dias • Comece hoje
           </p>
         </div>
 
