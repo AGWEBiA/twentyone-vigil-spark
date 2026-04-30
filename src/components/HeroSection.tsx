@@ -27,7 +27,7 @@ const HeroSection = () => {
         </a>
 
         <p className="text-dusty-rose text-sm mt-4">
-          Acesso imediato • Garantia de 30 dias • Download simples
+          Acesso imediato • Garantia de 7 dias • Download simples
         </p>
 
         <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-4 text-dusty-rose text-sm">
