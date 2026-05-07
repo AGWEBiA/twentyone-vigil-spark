@@ -26,14 +26,31 @@ const HeroSection = () => {
           QUERO COMEÇAR MEUS 21 DIAS AGORA
         </a>
 
-        <p className="text-dusty-rose text-sm mt-4">
-          Acesso imediato • Garantia de 7 dias • Download simples
+        <p className="font-display text-cream-gold text-2xl md:text-3xl lg:text-4xl mt-8 mb-4 leading-snug">
+          Mas antes de começar, leia o que vem abaixo.
         </p>
 
-        <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-4 text-dusty-rose text-sm">
-          <span>Criado por Giovanni Sophia — fumante por 24 anos</span>
-          <span className="hidden md:inline">•</span>
-          <span>Método estruturado: eBook + Checklist + Diário de Bordo + Guia de Gatilhos</span>
+        <p className="font-sub text-secondary text-base md:text-lg max-w-2xl mx-auto">
+          Se você se reconhecer em pelo menos uma dessas situações, esse caminho foi feito pra você.
+        </p>
+
+        <div className="mt-8 flex justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="text-cream-gold animate-bounce"
+            aria-hidden="true"
+          >
+            <path d="M12 5v14" />
+            <path d="m19 12-7 7-7-7" />
+          </svg>
         </div>
       </div>
     </section>
