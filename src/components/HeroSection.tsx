@@ -23,7 +23,7 @@ const HeroSection = () => {
         </p>
 
         <a href="#pricing" className="btn-cta text-lg mb-6">
-          QUERO COMEÇAR MEUS 21 DIAS AGORA — R$ 47
+          QUERO COMEÇAR MEUS 21 DIAS AGORA
         </a>
 
         <p className="text-dusty-rose text-sm mt-4">
