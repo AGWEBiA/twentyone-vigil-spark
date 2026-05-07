@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-burgundy-dark/80" />
 
       <div className="relative z-10 container mx-auto px-6 py-10 md:py-20 text-center max-w-4xl">
-        <p className="text-dusty-rose font-body text-base tracking-wider uppercase mb-6">
+        <p className="text-dusty-rose font-body text-sm tracking-wider uppercase mb-6">
           ✝ Para cristãos que fumam há anos, já tentaram parar e estão cansados de prometer "agora vai" e voltar para o maço
         </p>
 
