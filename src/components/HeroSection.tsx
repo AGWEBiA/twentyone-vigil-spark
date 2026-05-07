@@ -9,7 +9,7 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 bg-burgundy-dark/80" />
 
-      <div className="relative z-10 container mx-auto px-6 py-20 text-center max-w-4xl">
+      <div className="relative z-10 container mx-auto px-6 py-10 md:py-20 text-center max-w-4xl">
         <p className="text-dusty-rose font-body text-sm md:text-base tracking-wider uppercase mb-6">
           ✝ Para cristãos que fumam há anos, já tentaram parar e estão cansados de prometer "agora vai" e voltar para o maço
         </p>
@@ -26,7 +26,7 @@ const HeroSection = () => {
           QUERO COMEÇAR MEUS 21 DIAS AGORA
         </a>
 
-        <p className="font-display text-cream-gold text-2xl md:text-3xl lg:text-4xl mt-8 mb-4 leading-snug">
+        <p className="font-display text-cream-gold text-lg md:text-xl lg:text-2xl font-bold mt-8 mb-4 leading-snug">
           Mas antes de começar, leia o que vem abaixo.
         </p>
 
